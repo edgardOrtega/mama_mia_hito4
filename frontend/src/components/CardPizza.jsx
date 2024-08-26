@@ -23,8 +23,11 @@ const CardPizza = ({name,ingredients,price,img}) => {
               </ListGroup.Item>
               <ListGroup.Item>
                 <Card.Title>PRECIO: {price}</Card.Title>
-                <Card.Link href="#" className=''>  <Button variant="primary" >Ver más 👀 </Button></Card.Link>
-                <Card.Link href="#"  className=''>  <Button variant="dark">Añadir 🛒 </Button></Card.Link>
+                <div className="d-flex justify-content-center">
+                <Card.Link href="#" className='mx-2'>  <Button variant="primary" >Ver más 👀 </Button></Card.Link>
+                <Card.Link href="#"  className='mx-2'>  <Button variant="dark">Añadir 🛒 </Button></Card.Link>
+                </div>
+
             </ListGroup.Item>
       </ListGroup>
     </Card>

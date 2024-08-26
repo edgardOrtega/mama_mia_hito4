@@ -38,6 +38,7 @@ const Pizza = () => {
           <ListGroup className="list-group-flush">
             <ListGroup.Item>
               <Card.Text>INGREDIENTES:</Card.Text>
+              <Card.Text>{infor.desc}</Card.Text>
               <ul>
                 {infor.ingredients.map((ingredient, i) => (
                   <li key={i}>{ingredient}</li>
@@ -46,12 +47,14 @@ const Pizza = () => {
             </ListGroup.Item>
             <ListGroup.Item>
               <Card.Title>PRECIO: {infor.price}</Card.Title>
-              <Card.Link href="#" className="">
-                <Button variant="primary">Ver más 👀 </Button>
-              </Card.Link>
-              <Card.Link href="#" className="">
-                <Button variant="dark">Añadir 🛒 </Button>
-              </Card.Link>
+              <div className="d-flex justify-content-center">
+                <Card.Link href="#" className="mx-2 m-3">
+                  <Button variant="primary">Ver más 👀 </Button>
+                </Card.Link>
+                <Card.Link href="#" className="mx-2 m-3">
+                  <Button variant="dark">Añadir 🛒 </Button>
+                </Card.Link>
+              </div>
             </ListGroup.Item>
           </ListGroup>
         </Card>
